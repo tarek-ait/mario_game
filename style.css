@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background:  url(img/mario-bg.jpg);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-size: cover;
+    gap: 1rem;
+
+}
+
+h1{
+    margin-top: 2rem;
+}
+button{
+    padding: 5px 10px;
+    color: white;
+    font-size: 20px;
+    background-color: red;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+#start-button{
+    margin: 20rem;
+}
+#restart-button{
+    display: none;
+}
+img{
+    cursor: pointer;
+}
+
+.text #score{
+    display: none;
+    margin: 1rem;
+}
+#game{
+    display: none;
+}
+#board{
+    border: 3px solid white;
+    width: 540px;
+    height: 540px;
+    display: flex;
+    flex-wrap: wrap;
+    background: url(img/soil.png);
+    background-size: cover;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+#board div{
+    width: 180px;
+    height: 180px;
+    background-image: url(img/pipe.png);
+    background-size: cover;
+}
+
+#board div img{
+    width: 100px;
+    height: 100px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
